@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+.logo {
+    position: absolute;
+    width: 80px;
+    left: 10%;
+    top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+body 
+{
+    overflow-x: hidden;
+}
+.button {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    cursor: pointer;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 165px;
+    height: 54px;
+    border: 1px solid white;
+    color: white;
+    background: #4E5DC0;
+    border-radius: 5px;
+}
+/* Your existing CSS code */
+
+#team {
+    position: relative;
+}
+#team:hover
+{
+    color: #4E5DC0;
+}
+
+#team:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the distance of the underline from the text */
+    width: 100%;
+    height: 2px;
+    background-color: #4E5DC0; /* Change the color as needed */
+    display: block;
+}
+
+
+nav{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+.nav-items {
+    margin: 0 15px  ;
+    color: #777C85;
+}
+.hori{
+    width: 300px;
+    position: absolute;
+    top: 220px;
+    color: #777C85;
+}
+.hori-2{
+    width: 300px;
+    position: absolute;
+    left :800px;
+    top: 100%;
+    color: #777C85;
+}
+
+h2 
+{
+    position: absolute;
+    width: 312px;
+    height: 45px;
+    left: 150px;
+    top: 160px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #16171C;
+    font-stretch: 100;
+    font-variation-settings: 'GRAD' 122, 'slnt' 0, 'XTRA' 603, 'XOPQ' 96, 'YOPQ' 100, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+h1{
+    position: absolute;
+    width: 312px;
+    height: 45px;
+    left :800px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    /* identical to box height */
+    color: #16171C;
+    font-stretch: 100; 
+}
+
+
+.container
+{
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding: 10px 5%;
+    text-align: left;
+}
+.card
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+p
+{
+    color: #777C85;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+
+}
+.image{
+    width: 570px;
+    height: 427px;
+    border-radius: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .logo, .button {
+        position: static;
+        width: auto;
+        margin: 10px;
+        left: auto;
+        top: auto;
+        right: auto;
+    }
+
+    .hori, .hori-2, h2, h1 {
+        position: static;
+        width: auto;
+        left: auto;
+        top: auto;
+    }
+
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .nav-items {
+        margin: 10px;
+    }
+
+    .fb, .twitter, .insta {
+        left: auto;
+        top: auto;
+    }
+
+    .fb, .twitter, .insta img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fb {
+        left: 10%;
+        top: 92%;
+    }
+
+    .twitter {
+        left: 25%;
+        top: 92%;
+    }
+
+    .insta {
+        left: 40%;
+        top: 92%;
+    }
+
+    .menu, .para, .li, pre {
+        position: static;
+        left: auto;
+        bottom: auto;
+    }
+}
+
+ 
+pre 
+{
+    font-size:12px;
+    position: absolute;
+    bottom: -47rem;
+    left: 11rem;
+    color: #777C85;
+
+}
+.para 
+{
+    position: absolute;
+    left: 40%;
+    font-size:12px;
+
+}
+.li 
+{
+    position: absolute;
+    left: 60%;
+    bottom: -95%;
+    list-style: none;
+    font-size: 12px;
+    color:#8a8b93}
+.menu
+{
+    position: absolute;
+    left: 60%;
+}
+strong 
+{
+    color: #4E5DC0;
+    font-size: 16px;
+}
+footer 
+{
+    width: 100%;
+   
+}
+.footer 
+{
+    width: 80px;
+    position: absolute; 
+    left: 13%; 
+}
+.fb{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1210px;
+top: 1250px;
+border-radius: 50%;
+background: #4E5DC0;
+}
+
+.fb-img{
+    position: absolute;
+    width: 9.33px;
+    height: 16px;
+    left: 20px;
+    top: 15px;
+
+/* background: #; */
+}
+
+.twitter{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1266px;
+top: 1250px;
+border-radius: 50%;
+background: #4E5DC0;
+}
+
+.twitter-img{
+    position: absolute;
+width: 16px;
+height: 13px;
+left: 16px;
+top: 16px;
+
+}
+
+.insta{
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 1322px;
+top: 1250px;
+border-radius: 50%;
+background: #4E5DC0;
+}
+
+.insta-img
+{
+    position: absolute;
+width: 16px;
+height: 16px;
+left: 16px;
+top: 15px;
+
+/* background: #FFFFFF; */
+}
+
+
